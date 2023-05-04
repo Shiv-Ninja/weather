@@ -1,0 +1,205 @@
+body{
+background-image:url(bg.webp);
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: cover;
+
+}
+.header{
+    padding: 1rem 3%;
+    backdrop-filter: blur(8px);
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    z-index:100;
+    text-decoration: none;
+    box-shadow: 0 .5rem 1rem #000;
+}
+.header a{
+    text-decoration: none;
+}
+.box1{
+    margin-top: 30px;
+    display: flex;
+    justify-content:space-around;
+}
+
+.box1 .own{
+    background-image: url(snow2.png);
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+    background-size: contain;
+    color: rgb(10, 10, 10);
+flex-direction: column;
+text-align: center;
+border-radius: 15px;
+height:160px;
+width: 250px;
+line-height: .5;
+}
+.own .o2{
+    padding-top: 50px;
+    font-size: 1.2rem;
+}
+.own p{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.dnt{
+    padding-top: 20px;
+    background-image: url(snow1.png);
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+    background-size: contain;
+    text-align: center;
+    height:170px;
+width: 250px;
+   
+}
+.logo{
+    font-size: 1.4rem;
+    color: #fff;
+    font-weight: 400;
+    cursor: default;
+}
+.navbar a {
+    font-size: 1.2rem;
+    color: #fff;
+    margin-left: 2rem;    
+}
+.dnt .date{
+    font-size: 2rem;
+    margin: 5px auto 10px auto ;
+}
+
+.dnt .time{
+    font-size: 2rem;
+    margin: 40px auto 10px auto;
+}
+.box2{
+    width: 284px;
+    border-radius: 15px;
+    padding: 3px;
+    border: 2px solid black;
+    margin: 0px auto 0px auto;
+   justify-content: center;
+   box-shadow: 0 0 2rem aqua;
+    -webkit-backdrop-filter: blur(.5px);
+    backdrop-filter: blur(8px);
+}
+.box2 h2{
+    color: #fff;
+    text-align: center;
+    margin: 10px auto;
+}
+.box2 input{
+    font-size: 1.2rem;
+    text-align: center;
+    border-radius: 15px;
+    margin-bottom: 10px;
+}
+.box2 button{
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    text-align: center;
+    border-radius: 50px;
+}
+
+.weather{
+    font-size: 1.6rem;
+    padding: 30px;
+    width: 600px;
+    border-radius: 25px;
+    margin: 20px auto;
+    text-align: center;
+    -webkit-backdrop-filter: blur(6px);
+    backdrop-filter: blur(8px);
+    display: flex;
+    color: #fff;
+    box-shadow: 0 0 3rem aqua;
+    visibility: hidden;
+}
+.weather img{
+    width: 100px;
+    padding: 10px;
+}
+.weather .con1{
+    padding: 10px;
+    text-align: left;
+}
+
+.weather .con2{
+    padding: 10px;
+    text-align: left;
+}
+.error {
+    color: aliceblue;
+    font-size: 1.6rem;
+    text-align: center;
+    margin: 10px auto;
+    display: none;
+}
+@media(max-width:769px) {
+
+     .html{
+        font-size: 75%;
+     }
+
+}
+@media(max-width:450px){
+    .box1 .own .o2{
+        width: 200px;
+        height: 150px;
+        font-size: .8rem;
+    }
+    .box1 .own{
+        overflow: visible;
+        width: 200px;
+    }
+    .box1 .dnt{
+        overflow: visible;
+        top:-10px;
+        width: 200px;
+        height: 130px;
+        font-size: .8rem;
+    }
+    .dnt .time{
+        font-size: 1.2rem;
+    }
+    .dnt .date{
+        font-size: 1.2rem;
+    }
+    .weather{
+        text-align: center;
+        width:260px;
+        height: auto;
+        padding: 15px;
+        flex-direction: column;
+    }
+    .box2{
+        width: 300px;
+        justify-content: center;
+    }
+    .box2 h2{
+        font-size: 1.4rem;
+        font-weight: 600;
+    }
+    .box2 input{
+        font-size: 1rem;
+    }
+    .box2 button{
+        height: 30px;
+        font-size: 1rem;
+    }
+    .weather .con1,.weather .con2{
+        text-align: center;
+        font-size: 1.2rem;
+    }
+    .html{
+        width: 100%;
+        font-size: 40%;
+     }
+     
+}

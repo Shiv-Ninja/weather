@@ -1,0 +1,62 @@
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Weather js</title>
+</head>
+<body>
+        <div class="header">
+        <a href="#" class="logo" >Weather_Today</a>
+        <nav class="navbar">
+            <a href="#">Blogs</a>
+            <a href="#">Contact</a>
+        </nav>
+    </div>
+    
+    <div class="box1">
+        <div class="dnt">
+            <div class="time">00:00</div>
+            <div class="date">dd/mm/yyyy</div>
+        </div>
+      <div class="own">
+   <div class="o2">
+            <p>Location :<span class="city c1"></span>  </p>
+            <p>Temprature :<span class="temp t1"></span>  </p>
+            <p><i class='bx bx-wind'></i> :<span class="wind w1"></span>  </p>
+            <p>Humidity :<span class="humidity h1"></span>  </p>
+      </div>
+    </div>
+    </div>
+
+    <div class="box2">
+        <h2>Search your destination</h2>
+        <input type="search" name="city_name" placeholder="City name" id="city">
+        <button ><i class='bx btn bx-search-alt'></i></button>
+            <div class="error">
+                Invalid city name
+    </div>
+      
+    </div>
+    <div class="weather " id="hid">
+        <div class="image">
+            
+        <img src="images/rain.png" alt="" class="icon">
+        </div>
+        <div class="con1">
+            Temprature :<span class="temp t2"></span> <br><br>
+            Location :<span class="city c2"></span> 
+        </div>
+        <div class="con2">
+            <i class='bx bx-wind'></i> :<span class="wind w2"></span>   <br><br>
+            Humidity : <span class="humidity h2"> </span>  
+        </div>
+
+    </div>
+    
+
+    <script src="app.js"></script>
+</body>
+</html>
